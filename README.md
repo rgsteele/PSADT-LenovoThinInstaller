@@ -1,23 +1,27 @@
-### What is the PowerShell App Deployment Toolkit?
+### Disclaimer
 
-The PowerShell App Deployment Toolkit provides a set of functions to perform common application deployment tasks and to interact with the user during a deployment. It simplifies the complex scripting challenges of deploying applications in the enterprise, provides a consistent deployment experience and improves installation success rates.
+PSADT-LenovoThinInstaller is an independent project and not endorsed or supported in any way by Lenovo Group Limited.
 
-The PowerShell App Deployment Toolkit can be used to replace your WiseScript, VBScript and Batch wrapper scripts with one versatile, re-usable and extensible tool.
+### What is PSADT-LenovoThinInstaller?
 
-### What are the main features of the PowerShell App Deployment Toolkit?
+PSADT-LenovoThinInstaller is a wrapper for the [Lenovo Thin Installer](https://support.lenovo.com/ca/en/solutions/ht037099#ti) utility that allows it to be deployed and run on workstations in a user-friendly manner. It is intended to be deployed with Microsoft System Center Configuration Manager but should be adaptable to other deployment solutions. It is based on the [PowerShell App Deployment Toolkit](https://psappdeploytoolkit.com/) which is a versatile and easy to use framework for performing application installation tasks.
 
-* **Easy To Use** - Any PowerShell beginner can use the template and the functions provided with the Toolkit to perform application deployments.
-* **Consistent** - Provides a consistent look and feel for all application deployments, regardless of complexity.
-* **Powerful** - Provides a set of functions to perform common deployment tasks, such as installing or uninstalling multiple applications, prompting users to close apps, setting registry keys, copying files, etc.
-* **User Interface** - Provides user interaction through customizable user interface dialogs boxes, progress dialogs and balloon tip notifications.
-* **Localized** - The UI is localized in several languages and more can easily be added using the XML configuration file.
-* **Integration** - Integrates well with SCCM 2007/2012; provides installation and uninstallation deployment types with options on how to handle exit codes, such as supressing reboots or returning a fast retry code.
-* **Updatable** - The logic engine and functions are separated from per-application scripts, so that you can update the toolkit when a new version is released and maintain backwards compatibility with your deployment scripts.
-* **Extensible** - The Toolkit can be easily extended to add custom scripts and functions.
-* **Helpful** - The Toolkit provides detailed logging of all actions performed and even includes a graphical console to browse the help documentation for the Toolkit functions.
+### Features
+
+* Prompts user for permission before attempting to install updates that force a reboot and allows them to defer the installation
+* Will only install updates not requiring user interaction if no user is logged in
+* Suspends BitLocker before attempting to install BIOS updates (and schedules a task to resume it if needed)
+
+### Deployment instructions
+
+To be completed
+
+### Technical details
+
+To be completed
 
 ## License
 
-The PowerShell App Deployment Tool is free software: you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation, either version 3 of the License, or any later version.
+PSADT-LenovoThinInstaller is free software: you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation, either version 3 of the License, or any later version.
  
 This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU Lesser General Public License for more details.
