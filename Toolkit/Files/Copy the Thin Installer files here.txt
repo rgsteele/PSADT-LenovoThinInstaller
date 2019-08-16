@@ -1,0 +1,2 @@
+Download the latest version of Thin Installer from https://support.lenovo.com/ca/en/solutions/ht037099#ti, extract the .exe
+and copy the contents to this folder.
