@@ -263,7 +263,7 @@ Try {
 		[string]$installPhase = 'Post-Installation'
 		
 		If ($rebootTypeCount[3]) {
-            #Exit-Script 3010
+            If (-not $isProcessUserInteractive) { Exit-Script 3010 }
             Show-InstallationRestartPrompt -CountdownSeconds 28800 -CountdownNoHideSeconds 3600
         } ElseIf ($rebootTypeCount[1] -or $rebootTypeCount[4] -or $rebootTypeCount[5]) {
             If ($userResponse -eq $deferText) { Start-Sleep 1200 } ## TODO: Make delay value a parameter to the script
